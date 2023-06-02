@@ -54,6 +54,7 @@ h1{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 h2{
@@ -101,6 +102,8 @@ button:focus, button:hover {
 
 .background-main {
     background-image:linear-gradient(var(--overlay),var(--overlay)),url('../images/background-main.jpg');
+    width: 100%;
+    height: 600px;
 }
 
 button{
@@ -121,8 +124,10 @@ button{
     line-height: 1.875;
     width: 200px;
     padding: 10px 0;
-    margin: 30px 475px 200px 475px;
+    margin: 0 auto;
     letter-spacing: 0.06em;
+    /* display: flex;
+    justify-content: center; */
 }
 
 .icon-lorem{
@@ -342,6 +347,7 @@ ul[class="img-display"]>li{
 
 .img-grid img{
     display: block;
+    line-height: 20em;
 }
 
 ul[class="img-grid"]>li:hover{
@@ -384,6 +390,7 @@ ul[class="img-grid"]>li:hover{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     font-size: 18px;
     line-height: 1.56;
     color: var(--white-tekst);
@@ -440,8 +447,7 @@ ul[class="img-grid"]>li:hover{
     bottom: 0;
     right: 0;
     background-color: var(--img-shadow-third);
-    display: flex;
-    
+    display: flex;    
     transition-property: opacity, scale, visibility;
     transition-duration: 1s;
 }
@@ -456,7 +462,6 @@ ul[class="img-grid"]>li:hover{
     background-color: var(--white-tekst);
     box-shadow: 0px 1px 3px var(--img-shadow-first), 0px 1px 1px var(--img-shadow-second), 0px 2px 1px var(--img-shadow-third);
     border-radius: 4px;  
-
 }
 
 .is-hidden{
@@ -488,4 +493,9 @@ ul[class="img-grid"]>li:hover{
     display: flex;
     flex-direction: column;
     margin: 40px;
+}
+
+
+.textarea{
+    resize:both;
 }

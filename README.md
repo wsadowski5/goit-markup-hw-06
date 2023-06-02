@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-5 praca domowa
+# goit-markup-hw-06
+6 praca domowa
