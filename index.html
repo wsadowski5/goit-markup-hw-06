@@ -252,7 +252,7 @@
     <form name="order_the_service" autocomplete="on" class="form-style">
       <h3>Zostaw swoje dane w formularzu poniżej</h3>
       <label > <p>Imie</p>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
       </label>
       <label><p>Telefon</p>
         <input type="tel" name="phone_number">
@@ -264,7 +264,7 @@
         <textarea name="comment" placeholder="Wprowadź tekst" rows="8" cols="50" class="textarea"></textarea>
       </label>
       <label>
-        <input type="checkbox" name="reg_accept">
+        <input type="checkbox" name="reg_accept" required>
         Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
       </label>
       <button type="submit" class="button-main-page">Wyślij</button>
