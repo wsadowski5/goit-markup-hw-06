@@ -231,15 +231,23 @@
             <li class="transparent-text"><a href="tel:+48111111111">+48 111 111 111</a></li>
           </ul>
         </address>
-      <div>
-      <p class="social-footer">DOŁĄCZ DO NAS</p>
-      <div class="footer-icons">
-        <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use></svg>
-        </a>
-        <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
-        <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
-        <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
-      </div>
+      <div class="footer-social">
+        <p class="footer-inscription">DOŁĄCZ DO NAS</p>
+          <div class="footer-icons">
+            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use></svg></a>
+            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a>
+             <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg></a>
+            <a class="footer-round"><svg width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+          </div>
+        </div>
+      <div class="footer-newsletter">
+      <form>
+        <label for="newsletter" class="footer-inscription"><p>Zapisz się do newslettera</p></label>
+        <div class="input-send">
+        <input id="newsletter" type="email" placeholder="E-mail" class="newsletter-input">
+        <button type="submit">Zapisz się <svg width="24px" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button></div>
+      </form>
+    </div>
    </div>
   </footer>
 
@@ -250,23 +258,31 @@
     </button>
 
     <form name="order_the_service" autocomplete="on" class="form-style">
-      <h3>Zostaw swoje dane w formularzu poniżej</h3>
-      <label > <p>Imie</p>
-        <input type="text" name="name" required>
-      </label>
-      <label><p>Telefon</p>
-        <input type="tel" name="phone_number">
-      </label>
-      <label><p>Email </p>
-        <input type="email" name="email">
-      </label>
-      <label><p>Komentarz</p>
-        <textarea name="comment" placeholder="Wprowadź tekst" rows="8" cols="50" class="textarea"></textarea>
-      </label>
-      <label>
-        <input type="checkbox" name="reg_accept" required>
-        Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
-      </label>
+      <h3 >Zostaw swoje dane w formularzu poniżej</h3>
+      <div class="input-icons">
+      <label for="name" class=> <p>Imie</p></label>
+        <svg width="12px" height="12px" class="icon-name"><use href="./images/icons.svg#icon-name"></use></svg>
+        <input id="name" type="text" name="name" required>
+      
+      <label for="phone"><p>Telefon</p></label>
+        <svg width="13px" height="13px" class="icon-phone" ><use href="./images/icons.svg#icon-phone"></use></svg>
+        <input id="phone" type="tel" name="phone_number">
+      
+      <label for="e-mail"><p>Email </p></label>
+        <svg width="15px" height="12px" class="icon-email"><use href="./images/icons.svg#icon-e-mail"></use></svg>
+        <input id="e-mail type="email" name="email">
+      
+      <label for="comment"><p>Komentarz</p></label>
+        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea"></textarea>
+      </div>
+
+      <label class="label-checkbox" for="checkbox" class="checkbox-description"></label>
+        <div class="checkbox-description">
+          <!-- <input id="checkbox" type="checkbox" name="reg_accept" required>
+           <svg width="16px" height="15px" class="icon-checkbox"><use href="./images/icons.svg#icon-checkbox"></use></svg> -->
+        <p class="checkbox-text">Oświadczam iż akceptuję <span class="checkbox-underline">Regulamin</span> i<span class="checkbox-underline"> Politykę Prywatności.</span></p>
+        </div>
+
       <button type="submit" class="button-main-page">Wyślij</button>
     </form>
   </div>
