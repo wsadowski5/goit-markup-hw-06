@@ -251,6 +251,7 @@
    </div>
   </footer>
 
+
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="close" data-modal-close>
@@ -260,10 +261,12 @@
     <form name="order_the_service" autocomplete="on" class="form-style">
       <h3 >Zostaw swoje dane w formularzu poniżej</h3>
       <div class="input-icons">
-      <label for="name" class=> <p>Imie</p></label>
-        <svg width="12px" height="12px" class="icon-name"><use href="./images/icons.svg#icon-name"></use></svg>
-        <input id="name" type="text" name="name" required>
-      
+
+      <label for="name"> <p>Imie</p></label>
+        <svg width="12px" height="12px" class="icon-name" ><use href="./images/icons.svg#icon-name"></use></svg>
+        <input class="form-input" id="name" type="text" name="name" required >
+       
+
       <label for="phone"><p>Telefon</p></label>
         <svg width="13px" height="13px" class="icon-phone" ><use href="./images/icons.svg#icon-phone"></use></svg>
         <input id="phone" type="tel" name="phone_number">
@@ -278,8 +281,7 @@
 
       <label class="label-checkbox" for="checkbox" class="checkbox-description"></label>
         <div class="checkbox-description">
-          <!-- <input id="checkbox" type="checkbox" name="reg_accept" required>
-           <svg width="16px" height="15px" class="icon-checkbox"><use href="./images/icons.svg#icon-checkbox"></use></svg> -->
+          <input class="custom-input hidden-input" id="checkbox" type="checkbox" name="reg_accept" required width="16px"height="15px">
         <p class="checkbox-text">Oświadczam iż akceptuję <span class="checkbox-underline">Regulamin</span> i<span class="checkbox-underline"> Politykę Prywatności.</span></p>
         </div>
 
