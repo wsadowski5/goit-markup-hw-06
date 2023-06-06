@@ -244,8 +244,8 @@
       <form>
         <label for="newsletter" class="footer-inscription"><p>Zapisz się do newslettera</p></label>
         <div class="input-send">
-        <input id="newsletter" type="email" placeholder="E-mail" class="newsletter-input">
-        <button type="submit">Zapisz się <svg width="24px" height="24"><use href="./images/icons.svg#icon-send"></use></svg></button></div>
+        <input id="newsletter" type="email" placeholder="E-mail" class="newsletter-input form-input">
+        <button type="submit" class="button-main-page ">Zapisz się <svg width="24px" height="24" class="icon-newsletter"><use href="./images/icons.svg#icon-send"></use></svg></button></div>
       </form>
     </div>
    </div>
@@ -262,21 +262,39 @@
       <h3 >Zostaw swoje dane w formularzu poniżej</h3>
       <div class="input-icons">
 
-      <label for="name"> <p>Imie</p></label>
-        <svg width="12px" height="12px" class="icon-name" ><use href="./images/icons.svg#icon-name"></use></svg>
-        <input class="form-input" id="name" type="text" name="name" required >
-       
+     <div class="form-box"> 
+      <label for="name" class="label"> 
+        Imie</label> 
+        <input 
+          class="form-input" 
+          id="name" 
+          type="text" 
+          name="name" 
+          required 
+        />
+        <svg width="12px" height="12px" class="icons-form" ><use href="./images/icons.svg#icon-name"></use></svg> 
+    </div>
 
-      <label for="phone"><p>Telefon</p></label>
-        <svg width="13px" height="13px" class="icon-phone" ><use href="./images/icons.svg#icon-phone"></use></svg>
-        <input id="phone" type="tel" name="phone_number">
+    <div class="form-box"> 
+      <label for="phone">
+        Telefon</label>
+        <input 
+          class="form-input" 
+          id="phone" 
+          type="tel" 
+          name="phone_number"
+          />
+        <svg width="13px" height="13px" class="icons-form"><use href="./images/icons.svg#icon-phone"></use></svg>
+     </div> 
       
-      <label for="e-mail"><p>Email </p></label>
-        <svg width="15px" height="12px" class="icon-email"><use href="./images/icons.svg#icon-e-mail"></use></svg>
-        <input id="e-mail type="email" name="email">
-      
+     <div class="form-box"> 
+      <label for="e-mail">Email</label>
+        <input id="e-mail type="email" name="email" class="form-input" >
+        <svg width="15px" height="12px" class="icons-form"><use href="./images/icons.svg#icon-e-mail"></use></svg>
+      </div> 
+
       <label for="comment"><p>Komentarz</p></label>
-        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea"></textarea>
+        <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea form-input"></textarea>
       </div>
 
       <label class="label-checkbox" for="checkbox" class="checkbox-description"></label>
