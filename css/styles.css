@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif; 
     color:#212121;
-    width: 1600px;
+    max-width: 1600px;
     letter-spacing: 0.03em;
 }
 
@@ -157,6 +157,7 @@ button{
     font-size: 14px;
     line-height: 1.7;
     padding-bottom: 9px;
+    letter-spacing: 0.03em;
 }
 .contact-footer :nth-child(1){
     padding-bottom: 20px;
@@ -430,6 +431,7 @@ ul[class="img-grid"]>li:hover{
     background-color:inherit;
     border: 1px solid var(--newsletter-border);
     border-radius: 4px;
+    padding-left: 16px;
 }
 
 .footer-social{
@@ -568,8 +570,8 @@ form h3{
     font-style: 700;
 }
 
-.form-style label{
-    font-weight: 400;
+.form-label{
+font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
@@ -579,20 +581,59 @@ display: flex;
 }
 
 
-.checkbox-underline{
-    color: var(--brand-color-blue);
-    text-decoration: underline;
+.checkbox-label{
+    margin: 20px 0 30px 15px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: var(--brand-color-grey);
+display: flex;
+align-items: center;
+position: relative;
 }
 
+.checkbox-label a{
+    text-decoration: underline;
+    color: var(--brand-color-blue)
+}
 
+.checkbox-icon{
+    position: absolute;
+    fill: var(--white-tekst);
+    
+    border-radius: 2px ;
+    visibility: hidden;
+    transition-property: background-color,visibility;
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
+}
 
-.label-checkbox{
-    margin: 0;
-    height: 0;
+.checkbox-hidden:checked ~ .checkbox-icon{
+    visibility: visible;
+    background-color: var(--brand-color-blue);
+}
+
+.checkbox-icon-unchecked{
     position: absolute;
 }
 
-.custom-input {
+.checkbox-text{
+    margin-left: 8px;
+}
+
+
+
+.checkbox-hidden{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    z-index: 10;
+}
+
+/* .custom-input {
     background-image:url('../images/ikony-pojedynczo/formularze/checkbox.svg'); 
     width:16px;
     height:15px; 
@@ -606,15 +647,12 @@ display: flex;
     width:16px;
     height:15px; 
     border-radius:2px; 
-}
+} */
 
-.hidden-input{
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
 
-.checkbox-description {
+
+
+/* .checkbox-description {
     margin:20px 0px 30px 15px;
     display: flex;
     align-items: center;
@@ -624,7 +662,7 @@ display: flex;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--brand-color-grey);
-}
+} */
 
 
 

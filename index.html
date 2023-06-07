@@ -263,7 +263,7 @@
       <div class="input-icons">
 
      <div class="form-box"> 
-      <label for="name" class="label"> 
+      <label for="name" class="form-label"> 
         Imie</label> 
         <input 
           class="form-input" 
@@ -276,7 +276,7 @@
     </div>
 
     <div class="form-box"> 
-      <label for="phone">
+      <label for="phone" class="form-label">
         Telefon</label>
         <input 
           class="form-input" 
@@ -287,21 +287,38 @@
         <svg width="13px" height="13px" class="icons-form"><use href="./images/icons.svg#icon-phone"></use></svg>
      </div> 
       
-     <div class="form-box"> 
-      <label for="e-mail">Email</label>
+     <div class="form-box" > 
+      <label for="e-mail" class="form-label">Email</label>
         <input id="e-mail type="email" name="email" class="form-input" >
         <svg width="15px" height="12px" class="icons-form"><use href="./images/icons.svg#icon-e-mail"></use></svg>
       </div> 
 
-      <label for="comment"><p>Komentarz</p></label>
+      <label for="comment" class="form-label"><p>Komentarz</p></label>
         <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="textarea form-input"></textarea>
       </div>
 
-      <label class="label-checkbox" for="checkbox" class="checkbox-description"></label>
+      <!-- <label class="label-checkbox" for="checkbox" class="checkbox-description"></label>
         <div class="checkbox-description">
           <input class="custom-input hidden-input" id="checkbox" type="checkbox" name="reg_accept" required width="16px"height="15px">
         <p class="checkbox-text">Oświadczam iż akceptuję <span class="checkbox-underline">Regulamin</span> i<span class="checkbox-underline"> Politykę Prywatności.</span></p>
-        </div>
+        </div> -->
+
+      <label class="checkbox-label" for="checkbox-accept">  
+        <input class="checkbox-hidden" type="checkbox" width="16px"height="15px"
+        name="reg_accept" required>
+        <svg class="checkbox-icon-unchecked" width="16px" height="15px"> 
+          <use href="./images/icons.svg#icon-checkbox"></use>
+        </svg>
+        <svg class="checkbox-icon" width="16px" height="15px"> 
+          <use href="./images/icons.svg#icon-tick"></use>
+        </svg>
+
+       
+        
+       
+        <div class="checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a></div>
+      </label>
+
 
       <button type="submit" class="button-main-page">Wyślij</button>
     </form>
