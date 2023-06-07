@@ -598,21 +598,28 @@ position: relative;
 .checkbox-icon{
     position: absolute;
     fill: var(--white-tekst);
-    
     border-radius: 2px ;
     visibility: hidden;
-    transition-property: background-color,visibility;
+    transition-property: background-color,visibility,scale;
     transition-duration: var(--default-time);
     transition-timing-function: var(--default-timing-function);
+    scale:0;
 }
 
 .checkbox-hidden:checked ~ .checkbox-icon{
     visibility: visible;
     background-color: var(--brand-color-blue);
+    scale:1;
+}
+
+.checkbox-hidden:checked ~ .checkbox-icon-unchecked{
+    scale: 0;
 }
 
 .checkbox-icon-unchecked{
     position: absolute;
+    scale: 1;
+    transition:scale, 0.2s
 }
 
 .checkbox-text{
